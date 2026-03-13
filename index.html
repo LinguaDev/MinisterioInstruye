@@ -1,119 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Psicología y Acompañamiento – Ministerio Enseña</title>
-  <link rel="stylesheet" href="donate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ministerio Cristiano dirigido por el hermano Leonardo Quintanilla, Psicólogo. Cursos y terapia familiar para fortalecer parejas, familias, líderes y congregaciones. Managua, Nicaragua.">
+    <title>Ministerio MELFENP | Fortalecimiento Familiar Cristiano</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí irán tus estilos CSS -->
+    <script src="script.js" defer></script> <!-- Aquí irá tu JavaScript para menú hamburguesa y animaciones -->
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <h1 class="site-title">
-          <a href="index.html">Ministerio Enseña</a>
-        </h1>
-        <a href="index.html" class="btn btn-outline back-home">
-          ← Volver al Inicio
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero-donate" aria-labelledby="donate-title">
-      <div class="container narrow">
-        <h2 id="donate-title" class="section-title">Bienestar Emocional y Fe</h2>
-
-        <p class="lead">
-          Bienvenido al espacio del <strong>Psic. Leonardo Quintanilla</strong>. En el Ministerio Enseña, mi labor es integrar herramientas de la psicología profesional con la esperanza y los principios del evangelio, buscando no solo sanar los síntomas, sino restaurar la plenitud de la persona bajo una cosmovisión cristiana.
-        </p>
-
-        <p class="vision-text">
-          <strong>Mi propósito:</strong> Brindar un espacio seguro y empático donde cada individuo pueda explorar sus luchas, procesar sus emociones y encontrar herramientas prácticas para el crecimiento personal. Creo firmemente que la fe y la ciencia de la conducta pueden trabajar juntas para fortalecer la mente, el corazón y las relaciones.
-        </p>
-
-        <p class="lead support-note" style="margin-top: 2.5rem; font-weight: 500;">
-          Para coordinar una sesión o conocer más sobre nuestros servicios de acompañamiento terapéutico, puedes contactarme a través de los siguientes canales:
-        </p>
-
-        <div class="donation-options" role="region" aria-label="Métodos de contacto">
-
-          <article class="donation-card direct-support">
-            <h3>Atención Profesional</h3>
-            <p class="method-type">Programación de citas</p>
-
-            <div class="explanation">
-              <p>
-                Ofrezco atención especializada para quienes buscan un enfoque integral que respete sus valores espirituales y promueva su salud mental.
-              </p>
-              <p class="highlight-line">
-                <strong>Áreas de atención:</strong><br>
-                ansiedad y estrés • crisis de pareja • crecimiento personal • sanidad interior • equilibrio emocional
-              </p>
+    <!-- HEADER + NAV -->
+    <header class="header">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="src/Logo.jpg" alt="Logo Ministerio MELFENP" width="180" height="80">
             </div>
 
-            <div class="recipient-info">
-              <h4>Detalles del Profesional</h4>
-              <dl>
-                <dt>Psicólogo</dt>
-                <dd>Leonardo Quintanilla</dd>
-                <dt>Teléfono / WhatsApp</dt>
-                <dd>+505 5751 4440</dd>
-                <dt>Ubicación</dt>
-                <dd>León, Nicaragua</dd>
-              </dl>
-            </div>
+            <!-- Menú desktop -->
+            <nav class="nav-desktop">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
 
-            <p class="important-note">
-              <strong>Para agendar:</strong> Por favor, envíe un mensaje a WhatsApp o al correo
-              <a href="mailto:JUANCANALES5019@GMAIL.COM">JUANCANALES5019@GMAIL.COM</a> para confirmar disponibilidad.
-            </p>
-          </article>
+            <!-- Botón Hamburguesa (visible en móviles y tablets) -->
+            <button class="hamburger" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
-          <article class="donation-card online-infrastructure">
-            <h3>Recursos del Ministerio</h3>
-            <p class="method-type">Plataforma digital</p>
-
-            <div class="explanation">
-              <p>
-                Desarrollo contenido digital orientado al fortalecimiento de la salud mental desde una perspectiva cristiana a través del Ministerio Enseña:
-              </p>
-              <ul>
-                <li>Artículos sobre psicología y fe</li>
-                <li>Guías de manejo emocional</li>
-                <li>Talleres de crecimiento familiar</li>
-                <li>Herramientas para el bienestar integral</li>
-              </ul>
-            </div>
-
-            <div class="paypal-action">
-              <a href="https://paypal.me/JOHNJPC?locale.x=es_XC&country.x=NI"
-                 target="_blank" rel="noopener noreferrer"
-                 class="btn btn-paypal">
-                Acceder a recursos →
-              </a>
-            </div>
-          </article>
-
+            <!-- Menú móvil (se muestra con JS) -->
+            <nav class="nav-mobile">
+                <ul class="menu-mobile">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="src/Banner.jpg" alt="Banner Ministerio MELFENP" class="hero-image">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1>Fortalece tu familia con Cristo</h1>
+                    <p>Ministerio Cristiano dirigido por el <strong>Hermano Leonardo Quintanilla, Psicólogo</strong>.<br>
+                    Cursos y terapia familiar para parejas, familias, líderes y congregaciones.</p>
+                    <div class="cta-buttons">
+                        <a href="#servicios" class="btn-primary">Ver nuestros servicios</a>
+                        <a href="#contacto" class="btn-secondary">Contáctanos ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <h2 class="footer-title">Contacto – Ministerio Enseña</h2>
-      <address>
-        <p><strong>Email:</strong> <a href="mailto:JUANCANALES5019@GMAIL.COM">JUANCANALES5019@GMAIL.COM</a></p>
-        <p><strong>Ubicación:</strong> León, Nicaragua</p>
-      </address>
-      <p class="copyright">
-        © 2026 – Ministerio Enseña
-      </p>
-    </div>
-  </footer>
+    <!-- ACERCA DE -->
+    <section id="acerca" class="section acerca">
+        <div class="container">
+            <h2>Acerca del Ministerio</h2>
+            <div class="acerca-grid">
+                <!-- Columna 1: Texto -->
+                <div class="acerca-text">
+                    <p><strong>ES UN MINISTERIO CRISTIANO PUESTO A DISPOSICIÓN DE PAREJAS, FAMILIAS, LÍDERES Y CONGREGACIONES</strong> que deseen recibir cursos sobre temas dirigidos al fortalecimiento de la familia desde una perspectiva bíblica y psicológica.</p>
+                    <p>Dirigido por el <strong>Hermano Leonardo Quintanilla</strong>, psicólogo cristiano con más de 15 años de experiencia acompañando a familias nicaragüenses a vivir en armonía y propósito divino.</p>
+                    
+                    <div class="info-contacto">
+                        <p><strong>Dirección:</strong><br>
+                        Com. Las Jaguitas, 4 esquinas 2 al sur 1 al este,<br>
+                        casa esquinera mano derecha, Managua, Nicaragua</p>
+                        <p><strong>Teléfono:</strong> <a href="tel:50558485059">5848 5059</a></p>
+                        <p><strong>Correo:</strong> <a href="mailto:melfenp127.3@gmail.com">melfenp127.3@gmail.com</a></p>
+                    </div>
+                </div>
 
+                <!-- Columna 2: Foto + visión (puedes cambiar la imagen más adelante) -->
+                <div class="acerca-visual">
+                    <img src="https://picsum.photos/id/1015/600/400" alt="Hermano Leonardo Quintanilla" class="director-photo">
+                    <div class="vision-box">
+                        <h3>Nuestra Visión</h3>
+                        <p>Familias restauradas, matrimonios fortalecidos y congregaciones equipadas para impactar su generación con el amor de Cristo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section servicios">
+        <div class="container">
+            <h2>Servicios y Cursos</h2>
+            <p class="section-subtitle">Terapia familiar cristiana y cursos prácticos para tu hogar y ministerio</p>
+            
+            <div class="servicios-grid">
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Terapia Familiar</h3>
+                    <p>Sesiones personalizadas para resolver conflictos, mejorar comunicación y restaurar relaciones desde una perspectiva bíblica y psicológica.</p>
+                    <a href="#contacto" class="card-link">Solicitar cita</a>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="card">
+                    <div class="card-icon">💍</div>
+                    <h3>Consejería para Parejas</h3>
+                    <p>Pre-matrimonial, matrimonial y de crisis. Herramientas prácticas para un matrimonio según el diseño de Dios.</p>
+                    <a href="#contacto" class="card-link">Solicitar cita</a>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>Cursos de Fortalecimiento Familiar</h3>
+                    <p>Programas de 8-12 semanas sobre crianza, finanzas familiares, oración en el hogar y manejo de emociones.</p>
+                    <a href="#recursos" class="card-link">Ver cursos</a>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="card">
+                    <div class="card-icon">🙏</div>
+                    <h3>Talleres para Líderes y Congregaciones</h3>
+                    <p>Capacitación para pastores, líderes de jóvenes y ministerios familiares. Temas: consejería básica, prevención de divorcio y unidad familiar.</p>
+                    <a href="#contacto" class="card-link">Reservar taller</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="section recursos">
+        <div class="container">
+            <h2>Recursos Gratuitos</h2>
+            <div class="recursos-flex">
+                <!-- YouTube -->
+                <a href="https://youtube.com/channel/UCDAybgrG0Gd-bKjAFwxvyBA" target="_blank" class="recurso-card">
+                    <img src="https://picsum.photos/id/201/300/200" alt="YouTube">
+                    <h3>Canal de YouTube</h3>
+                    <p>Predicaciones, enseñanzas y testimonios sobre familia cristiana. ¡Suscríbete!</p>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1DvVj1cnAx/" target="_blank" class="recurso-card">
+                    <img src="https://picsum.photos/id/237/300/200" alt="Facebook">
+                    <h3>Página de Facebook</h3>
+                    <p>Actualizaciones, eventos y material diario para fortalecer tu fe y tu hogar.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contacto-grid">
+                <!-- Formulario -->
+                <div class="formulario">
+                    <form action="https://formsubmit.co/juancanales5019@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" value="505">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje (¿qué servicio te interesa?)</label>
+                            <textarea id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Info + mapa placeholder -->
+                <div class="contacto-info">
+                    <div class="info-box">
+                        <h3>Visítanos</h3>
+                        <p>Com. Las Jaguitas, 4 esquinas 2 al sur 1 al este,<br>
+                        casa esquinera mano derecha<br>
+                        Managua, Nicaragua</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Llama o escribe</h3>
+                        <p><strong>Tel:</strong> <a href="tel:50558485059">5848 5059</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:melfenp127.3@gmail.com">melfenp127.3@gmail.com</a></p>
+                    </div>
+                    <!-- Puedes reemplazar con iframe de Google Maps más adelante -->
+                    <div class="mapa-placeholder">
+                        <p>Ubicación en Managua</p>
+                        <div class="map-box">📍 (Aquí irá tu mapa de Google)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="logo.png" alt="Logo" width="140">
+                    <p>Ministerio Cristiano MELFENP<br>
+                    Fortaleciendo familias con la Palabra y la Psicología</p>
+                </div>
+                <div>
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#acerca">Acerca de</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Síguenos</h4>
+                    <ul class="redes">
+                        <li><a href="https://youtube.com/channel/UCDAybgrG0Gd-bKjAFwxvyBA" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.facebook.com/share/1DvVj1cnAx/" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>&copy; 2026 Ministerio MELFENP - Dirigido por Hermano Leonardo Quintanilla, Psicólogo.<br>
+                    Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS para menú hamburguesa (ejemplo básico que luego expandes) -->
+    <script>
+        // Este script se moverá a script.js más adelante
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-mobile').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
